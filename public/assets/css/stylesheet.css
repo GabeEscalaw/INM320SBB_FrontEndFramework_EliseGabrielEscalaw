@@ -1,0 +1,152 @@
+.main {
+  height: 100vh;
+}
+
+.dbkit {
+  font-size: larger;
+  color: #838590;
+  margin-bottom: 50px;
+}
+
+.name {
+  font-size: 0.8rem;
+  margin: 0 10px 0 20px;
+  cursor: default;
+}
+
+.profile {
+  width: 30px;
+  height: auto;
+  padding: 1px;
+  cursor: pointer;
+}
+
+.overview {
+  font-size: 20px;
+  cursor: default;
+}
+
+.notif {
+  position: relative;
+  display: inline-block;
+}
+
+.bNotif {
+  position: absolute;
+  top: -4px;
+  right: -4px;
+  transform: translateX(50%);
+  background-color: #3751ff;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 0.6rem;
+  scale: 0.3;
+  outline: 2px solid #f7f8fc;
+}
+
+.label {
+  color: #c3c5d0 !important;
+  font-size: larger;
+}
+
+.value {
+  color: #252733 !important;
+}
+
+.search, .notif {
+  margin-right: 20px;
+}
+
+.fCard {
+  cursor: pointer;
+}
+
+.fCard:hover {
+  outline: 2px solid #3751ff;
+}
+
+.fCard:hover > * {
+  color: #3751ff;
+}
+
+.nav-link {
+  padding-left: 2rem !important;
+}
+
+.nav-link:hover {
+  background-color: #3f4049;
+  border-left: 2px solid #dde2ff;
+}
+
+.bi-circle-fill:before {
+  color: #3751ff;
+  margin-right: 10px;
+}
+
+.bi-pie-chart-fill::before {
+  margin-right: 20px;
+}
+
+.bi-ticket-fill::before {
+  margin-right: 20px;
+}
+
+.bi-lightbulb-fill::before {
+  margin-right: 20px;
+}
+
+.bi-file-person-fill::before {
+  margin-right: 20px;
+}
+
+.bi-person-fill::before {
+  margin-right: 20px;
+}
+
+.bi-book-fill::before {
+  margin-right: 20px;
+}
+
+.bi-gear-fill::before {
+  margin-right: 20px;
+}
+
+.bi-award-fill::before {
+  margin-right: 20px;
+}
+
+.lCard {
+  font-size: 0.75rem;
+}
+
+.lText {
+  font-size: 0.75rem;
+}
+
+.view {
+  text-decoration: none;
+}
+
+.check {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.urgent {
+  background-color: #fec400;
+}
+
+.new {
+  background-color: #29cc97;
+}
+
+.default {
+  background-color: #c3c5d0;
+}
+
+/*# sourceMappingURL=stylesheet.css.map */

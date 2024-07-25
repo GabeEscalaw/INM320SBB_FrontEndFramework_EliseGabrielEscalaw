@@ -1,0 +1,164 @@
+$primary-color: #252733;
+$secondary-color: #c3c5d0;
+$background-color: #f7f8fc;
+$hover-color: #3751ff;
+$urgent-color: #fec400;
+$new-color: #29cc97;
+$default-color: #3751ff;
+
+$spacer: 1rem;
+$grid-gutter-width: 1.5rem;
+$gutters: (
+  0: 0,
+  1: $spacer * .25,
+  2: $spacer * .5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+);
+
+.main {
+    height: 100vh;
+}
+
+.dbkit {
+    font-size: larger;
+    color: #838590;
+    margin-bottom: 50px;
+}
+
+.name {
+    font-size: 0.8rem;
+    margin: 0 10px 0 20px;
+    cursor: default;
+}
+
+.profile {
+    width: 30px;
+    height: auto;
+    padding: 1px;
+    cursor: pointer;
+}
+
+.overview {
+    font-size: 20px;
+    cursor: default;
+}
+
+.notif {
+    position: relative;
+    display: inline-block;
+}
+
+.bNotif {
+    position: absolute;
+    top: -4px;
+    right: -4px;
+    transform: translateX(50%);
+    background-color: $hover-color;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 0.6rem;
+    scale: 0.3;
+    outline: 2px solid $background-color; 
+}
+
+.label {
+    color: $secondary-color !important;
+    font-size: larger;
+}
+
+.value {
+    color: $primary-color !important;
+}
+
+.search, .notif {
+    margin-right: 20px;
+}
+
+.fCard {
+    cursor: pointer;
+}
+
+.fCard:hover {
+    outline: 2px solid $hover-color;
+}
+
+.fCard:hover > * {
+    color: $hover-color;
+}
+
+.nav-link {
+    padding-left: ($spacer * 2) !important;
+}
+
+.nav-link:hover {
+    background-color: #3f4049;
+    border-left: 2px solid #dde2ff ;
+}
+
+.bi-circle-fill:before {
+    color: #3751ff;
+    margin-right: 10px;
+}
+
+.bi-pie-chart-fill::before {
+    margin-right: 20px;
+}
+.bi-ticket-fill::before {
+    margin-right: 20px;
+}
+.bi-lightbulb-fill::before {
+    margin-right: 20px;
+}
+.bi-file-person-fill::before {
+    margin-right: 20px;
+}
+.bi-person-fill::before {
+    margin-right: 20px;
+}
+.bi-book-fill::before {
+    margin-right: 20px;
+}
+.bi-gear-fill::before {
+    margin-right: 20px;
+}
+.bi-award-fill::before {
+    margin-right: 20px;
+}
+
+.lCard {
+    font-size: 0.75rem;
+}
+
+.lText {
+    font-size: 0.75rem;
+}
+
+.view {
+    text-decoration: none;
+}
+
+.check {
+    margin-top:auto;
+    margin-bottom:auto;
+}
+
+.urgent {
+    background-color: $urgent-color;
+}
+.new {
+    background-color: $new-color;
+}
+.default {
+    background-color: $secondary-color;
+}
+
+@media (min-width: 768px) {
+    
+}

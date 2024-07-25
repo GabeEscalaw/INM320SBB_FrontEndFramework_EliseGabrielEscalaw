@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INM320 Bootstrap</title>
+
+    <!-- default -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@3.0.0/reset.min.css" />
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+    <!-- css -->
+    <link rel="stylesheet" href="/assets/css/stylesheet.css" />
+    
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://unpkg.com/bs-brain@2.0.4/components/charts/chart-1/assets/css/chart-1.css">
+
+</head>
+<body>
+    <div class="container-fluid bg-light">
+        <div class="row main">
+            <!-- NAV -->
+            <nav class="col-sm-12 col-xl-2 navbar navbar-expand-sm navbar-dark bg-dark d-flex align-content-start flex-wrap collapse">
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav flex-column container-fluid">
+                        <a class="nav-link disabled dbkit bi bi-circle-fill" href="#" tabindex="-1" aria-disabled="true">Dashboard Kit</a>
+                        <a class="nav-link bi bi-pie-chart-fill" aria-current="overview" href="#">Overview</a>
+                        <a class="nav-link bi bi-ticket-fill" aria-current="ticket" href="#">Ticket</a>
+                        <a class="nav-link bi bi-lightbulb-fill" aria-current="ideas" href="#">Ideas</a>
+                        <a class="nav-link bi bi-file-person-fill" aria-current="contacts" href="#">Contacts</a>
+                        <a class="nav-link bi bi-person-fill" aria-current="agents" href="#">Agents</a>
+                        <a class="nav-link bi bi-book-fill" aria-current="articles" href="#">Articles</a>
+                        <hr class="border-2 border-top" />
+                        <a class="nav-link bi bi-gear-fill" aria-current="settings" href="#">Settings</a>
+                        <a class="nav-link bi bi-award-fill" aria-current="subscription" href="#">Subscription</a>
+                    </div>
+                </div>
+            </nav>
+            <div class="col-sm-12 col-xl-10 container-fluid px-5 py-3">
+                <!-- HEADER -->
+                <div class="row d-flex align-items-start">
+                    <div class="col-8 overview fw-semibold g-0">Overview </div>
+                    <!-- name and picture -->
+                    <div class="col-4 g-0">
+                        <div class="row d-flex align-content-center"> 
+                            <div class="d-flex justify-content-end align-content-center"> 
+                                <a class="bi bi-search search text-muted" aria-current="search" href="#"></a>
+                                <div class="border-2 border-end ">
+                                    <a class="bi bi-bell-fill notif text-muted" aria-current="notification" href="#">
+                                        <span class="badge bNotif"> </span>
+                                    </a>
+                                </div>
+                                <p class="name align-self-center">Jones Ferdinand </p>
+                                <img class="rounded-circle img-fluid profile" alt="avatar1" src="assets/img/profile.jpg" />
+                            </div>
+                        </div>   
+                    </div>
+                </div>
+                <!-- CARDS -->
+                <div class="card-deck row d-flex justify-content-between py-4">
+                    <div class="col card text-center me-md-4 fCard">
+                        <p class="card-title label pt-3 fw-semibold">Unresolved</p>
+                        <h1 class="card-text value pb-3 fw-bold">60</h1>
+                    </div>
+                    <div class="col card text-center me-md-4 fCard">
+                        <p class="card-title label pt-3 fw-semibold">Overdue</p>
+                        <h1 class="card-text value pb-3 fw-bold">16</h1>
+                    </div>
+                    <div class="col card text-center me-md-4 fCard">
+                        <p class="card-title label pt-3 fw-semibold">Open</p>
+                        <h1 class="card-text value pb-3 fw-bold">43</h1>
+                    </div>
+                    <div class="col card text-center fCard">
+                        <p class="card-title label pt-3 fw-semibold">On hold</p>
+                        <h1 class="card-text value pb-3 fw-bold">64</h1>
+                    </div>
+                </div>
+                <!-- TRENDS -->
+                <div class="row bg-white rounded">
+                    <div class="col-xs-12 col-md-8 p-5 border-top border-start border-bottom rounded-start">
+                        <h5 class="pt-3 fw-semibold">Today's Trends</h5>
+                        <img class="p-0 container-fluid"src="/assets/img/graph-sample.png" alt="sample line graph">
+                    </div>
+                    <div class="col-xs-12 col-md-4 border d-flex justify-content-center flex-wrap g-0 rounded-end">
+                        <div class="row container-fluid text-center tCard border-bottom">
+                            <p class="card-title label pt-4 mb-1">Resolved</p>
+                            <h3 class="fw-semibold pb-4">449</h3>
+                        </div>
+                        <div class="row container-fluid text-center tCard border-bottom">
+                            <p class="card-title label pt-4 mb-1">Received</p>
+                            <h3 class="card-text fw-semibold pb-4">426</h3>
+                        </div>
+                        <div class="row container-fluid text-center tCard border-bottom">
+                            <p class="card-title label pt-4 mb-1">Average first response time</p>
+                            <h3 class="card-text fw-semibold pb-4">33m</h3>
+                        </div>
+                        <div class="row container-fluid text-center tCard border-bottom">
+                            <p class="card-title label pt-4 mb-1">Average response time</p>
+                            <h3 class="card-text fw-semibold pb-4">3h 8m</h3>
+                        </div>
+                        <div class="row container-fluid text-center tCard">
+                            <p class="card-title label pt-4 mb-1">Resolution within SLA</p>
+                            <h3 class="card-text fw-semibold pb-4">94%</h3>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- TICKETS AND TASKS -->
+                <div class="row py-4">
+                    <div class="col container-fluid g-0">
+                        <div class="card-deck d-flex justify-content-between"> 
+                            <div class="card container-fluid me-md-4 col-md-6 col-xs-12">
+                                <div class="d-flex cHeader justify-content-between p-3">
+                                    <div class="col p-0 d-flex flex-column">
+                                        <h5 class="card-title">Unresolved tickets</h5>
+                                        <p class="card-text label lCard">Group: <span class="support value lCard">Support</span></p>
+                                    </div>
+                                    <a href="#" class="card-link lCard view">View details</a>
+                                </div>
+                                <ul class="list-group list-group-flush border-top-0">
+                                    <li class="list-group-item d-flex justify-content-between">
+                                        <p class="m-0 ">Waiting on Feature Request</p>
+                                        <p class="label m-0">4238</p>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between">
+                                        <p class="m-0 ">Awaiting Customer Response</p>
+                                        <p class="label m-0">1005</p>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between">
+                                        <p class="m-0 ">Awaiting Developer Fix</p>
+                                        <p class="label m-0">914</p>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between">
+                                        <p class="m-0 ">Pending</p>
+                                        <p class="label m-0">261</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="card container-fluid col-md-6 col-xs-12">
+                                <div class="d-flex cHeader justify-content-between p-3">
+                                    <div class="col p-0 d-flex flex-column">
+                                        <h5 class="card-title">Tasks</h5>
+                                        <p class="card-text label lCard">Today</p>
+                                    </div>
+                                    <a href="#" class="card-link lCard view">View all</a>
+                                </div>
+                                <ul class="list-group list-group-flush border-top-0 ">
+                                    <li class="list-group-item d-flex justify-content-between">
+                                        <p class="m-0 label">Create new tasks</p>
+                                        <p class="label m-0 bi bi-plus-square-fill label"></p>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center py-2">
+                                        <div class="form-check d-flex flex align-items-center mb-0">
+                                            <input class="form-check-input rounded-circle p-0 align-middle check" type="checkbox" value="" id="flexCheckDefault">
+                                            <label class="form-check-label ps-2" for="flexCheckDefault">
+                                              Finish ticket update
+                                            </label>
+                                          </div>
+                                        <p class="px-3 m-0 rounded text-light urgent">URGENT</p>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center py-2">
+                                        <div class="form-check d-flex flex align-items-center mb-0">
+                                            <input class="form-check-input rounded-circle p-0 align-middle check" type="checkbox" value="" id="flexCheckDefault">
+                                            <label class="form-check-label ps-2" for="flexCheckDefault">
+                                              Create new ticket example
+                                            </label>
+                                          </div>
+                                        <p class="px-3 m-0 rounded text-light new">NEW</p>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center py-2">
+                                        <div class="form-check d-flex flex align-items-center mb-0">
+                                            <input class="form-check-input rounded-circle p-0 align-middle check" type="checkbox" value="" id="flexCheckDefault" checked>
+                                            <label class="form-check-label ps-2" for="flexCheckDefault">
+                                              Update ticket report
+                                            </label>
+                                          </div>
+                                        <p class="px-3 m-0 rounded text-light default">DEFAULT</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- cant read JS files for some reason -->
+    <!-- <script src="/assets/js/main.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
