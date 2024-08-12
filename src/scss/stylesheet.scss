@@ -17,6 +17,10 @@ $gutters: (
   5: $spacer * 3,
 );
 
+html {
+    background-color: $background-color !important;
+}
+
 .main {
     height: 100vh;
 }
@@ -68,15 +72,6 @@ $gutters: (
     outline: 2px solid $background-color; 
 }
 
-.label {
-    color: $secondary-color !important;
-    font-size: larger;
-}
-
-.value {
-    color: $primary-color !important;
-}
-
 .search, .notif {
     margin-right: 20px;
 }
@@ -90,7 +85,7 @@ $gutters: (
 }
 
 .fCard:hover > * {
-    color: $hover-color;
+    color: $hover-color !important;
 }
 
 .nav-link {
@@ -159,6 +154,58 @@ $gutters: (
     background-color: $secondary-color;
 }
 
+// moved the fourCards and tickets here for ease of seeing
+
+.fourCards {
+    flex-direction: column;
+}
+
+.tickets {
+    flex-direction: column;
+}
+
+// JSON content start
+
+// fourCards
+.fCardsLabel {
+    color: $secondary-color !important;
+    font-size: larger;
+}
+
+.fCardsValue {
+    color: $primary-color !important;
+}
+
+// trends
+.trendsLabel {
+    color: $secondary-color !important;
+    font-size: larger;
+}
+
+.trendsValue {
+    color: $primary-color !important;
+}
+
+//tickets
+.ticketsValue {
+    color: $secondary-color !important;
+    font-size: larger;
+}
+
+.ticketsLabel {
+    color: $primary-color !important;
+}
+
+// JSON content end
+
+
 @media (min-width: 768px) {
+    .fourCards {
+        flex-direction: row;
+    }
+
+    .tickets {
+        flex-direction: row;
+    }
     
 }

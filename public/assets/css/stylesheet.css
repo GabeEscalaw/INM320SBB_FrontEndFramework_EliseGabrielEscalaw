@@ -1,3 +1,7 @@
+html {
+  background-color: #f7f8fc !important;
+}
+
 .main {
   height: 100vh;
 }
@@ -49,15 +53,6 @@
   outline: 2px solid #f7f8fc;
 }
 
-.label {
-  color: #c3c5d0 !important;
-  font-size: larger;
-}
-
-.value {
-  color: #252733 !important;
-}
-
 .search, .notif {
   margin-right: 20px;
 }
@@ -71,7 +66,7 @@
 }
 
 .fCard:hover > * {
-  color: #3751ff;
+  color: #3751ff !important;
 }
 
 .nav-link {
@@ -147,6 +142,50 @@
 
 .default {
   background-color: #c3c5d0;
+}
+
+.fourCards {
+  flex-direction: column;
+}
+
+.tickets {
+  flex-direction: column;
+}
+
+.fCardsLabel {
+  color: #c3c5d0 !important;
+  font-size: larger;
+}
+
+.fCardsValue {
+  color: #252733 !important;
+}
+
+.trendsLabel {
+  color: #c3c5d0 !important;
+  font-size: larger;
+}
+
+.trendsValue {
+  color: #252733 !important;
+}
+
+.ticketsValue {
+  color: #c3c5d0 !important;
+  font-size: larger;
+}
+
+.ticketsLabel {
+  color: #252733 !important;
+}
+
+@media (min-width: 768px) {
+  .fourCards {
+    flex-direction: row;
+  }
+  .tickets {
+    flex-direction: row;
+  }
 }
 
 /*# sourceMappingURL=stylesheet.css.map */
